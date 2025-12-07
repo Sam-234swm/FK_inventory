@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flipkart Inventory Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Plotly -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    
+    <!-- SheetJS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+    <!-- DayJS -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+</head>
+
+<body>
+
+<h1>📦 Flipkart Inventory Dashboard (GitHub Pages)</h1>
+
+<input type="file" id="fileInput" accept=".xlsx" />
+
+<div class="filters">
+    <label>City:</label>
+    <select id="cityFilter"></select>
+
+    <label>Start Date:</label>
+    <input type="date" id="startDate">
+
+    <label>End Date:</label>
+    <input type="date" id="endDate">
+
+    <button onclick="applyFilters()">Apply Filters</button>
+</div>
+
+<div id="chart1"></div>
+<div id="chart2"></div>
+<div id="chart3"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
